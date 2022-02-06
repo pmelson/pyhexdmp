@@ -1,6 +1,6 @@
 # pyhexdmp Python hex dump module
-  ### Copyright 2021
-  ### Author: Paul Melson
+  #### Copyright 2021
+  #### Author: Paul Melson
 
 ## Author notes:
   * Accept single variable as input, plus optional config arguments
