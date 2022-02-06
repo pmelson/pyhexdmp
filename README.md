@@ -20,10 +20,7 @@
        bytes per line to print
        
 ## Usage:
-Python 3.8.10 (default, Nov 26 2021, 20:14:08) 
-[GCC 9.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> **from pyhexdmp import hexdmp**
+```>>> **from pyhexdmp import hexdmp**
 >>> **with open('/home/paul/sample.exe', 'rb') as f:**
 ...     **raw = f.read()**
 ... 
@@ -81,3 +78,4 @@ b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  ........@.......
 00000068: 20 69 6e 20 44 4f 53 20   in DOS 
 00000070: 6d 6f 64 65 2e 0d 0d 0a  mode....
 00000078: 24 00 00 00 00 00 00 00  $.......
+```
