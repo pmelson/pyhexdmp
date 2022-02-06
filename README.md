@@ -20,7 +20,7 @@
        bytes per line to print
        
 ## Usage:
-```
+```python
 >>> from pyhexdmp import hexdmp
 >>> with open('/home/paul/sample.exe', 'rb') as f:
 ...     raw = f.read()
