@@ -4,13 +4,13 @@
 ## Author: Paul Melson
 
 ## Author notes:
-  Accept single variable as input, plus optional config arguments
-  Detect data type of input
-  Supported data types: str, bytes, bytearray
-  Unsupported data types: complex, bool, int, float
-  Undecided (currently unsupported): list, dict, range, tuple, memoryview
-  Convert input to bytearray()
-  Print hex output format, supported optional arguments:
+  * Accept single variable as input, plus optional config arguments
+  * Detect data type of input
+  * Supported data types: str, bytes, bytearray
+  * Unsupported data types: complex, bool, int, float
+  * Undecided (currently unsupported): list, dict, range, tuple, memoryview
+  * Convert input to bytearray()
+  * Print hex output format, supported optional arguments:
     1. **offsets**: on/off, default=on, print the distance of the first byte
        of each line in hex notation on the left
     2. **start**: int, manually set offsets start value
@@ -18,25 +18,16 @@
        byte on the right (print periods for hi/lo bytes)
     4. **width**: positive int, default=16, let the user set the number of
        bytes per line to print
-       
+ 
 ## Usage:
-**Importing**
+
 ```python
 from pyhexdmp import hexdmp
-```
-```
 >>> from pyhexdmp import hexdmp
 >>> with open('/home/paul/sample.exe', 'rb') as f:
 ...     raw = f.read()
 ... 
 >>> test_data = raw[:128]
-```
-
-**Basic output:**
-```python
-hexdmp(test_data)
-```
-```
 >>> hexdmp(test_data)
 00000000: 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00  MZ..............
 00000010: b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  ........@.......
@@ -46,9 +37,6 @@ hexdmp(test_data)
 00000050: 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f  is program canno
 00000060: 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20  t be run in DOS 
 00000070: 6d 6f 64 65 2e 0d 0d 0a 24 00 00 00 00 00 00 00  mode....$.......
-```
-
-```
 >>> hexdmp(test_data, offsets='off')
 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00  MZ..............
 b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  ........@.......
