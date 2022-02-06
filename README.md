@@ -4,13 +4,13 @@
 ## Author: Paul Melson
 
 ## Author notes:
-  * Accept single variable as input, plus optional config arguments
-  * Detect data type of input
-  * Supported data types: str, bytes, bytearray
-  * Unsupported data types: complex, bool, int, float
-  * Undecided (currently unsupported): list, dict, range, tuple, memoryview
-  * Convert input to bytearray()
-  * Print hex output format, supported optional arguments:
+  1. Accept single variable as input, plus optional config arguments
+  2. Detect data type of input
+  3. Supported data types: str, bytes, bytearray
+  4. Unsupported data types: complex, bool, int, float
+  5. Undecided (currently unsupported): list, dict, range, tuple, memoryview
+  6. Convert input to bytearray()
+  7. Print hex output format, supported optional arguments:
     1. **offsets**: on/off, default=on, print the distance of the first byte
        of each line in hex notation on the left
     2. **start**: int, manually set offsets start value
