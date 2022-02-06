@@ -1,0 +1,17 @@
+TODO
+  1. Do good error handling (do me next!)
+    a. data type handling DONE
+    b. offsets and showascii
+    c. width (enforce positive int)
+  2. Support for casting output to variable / file?
+  3. Add start (starting offset) argument and feature
+    a. check that start is <= len(data)-1
+    b. implement check for decimal vs hex format or enforce one?
+    c. error handling!
+  4. GitHub public release
+  5. Make pip package/installer and publish
+  6. Write a test.py to test features/errors
+  ...
+  10. Try real hard to stay PEP8 compliant
+
+Reference sys.exit as sysexit (replace with proper err handling/return)
