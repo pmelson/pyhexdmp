@@ -10,16 +10,29 @@
   * Undecided (currently unsupported): list, dict, range, tuple, memoryview
   * Convert input to bytearray()
   * Print hex output format, supported optional arguments:
+
     * **offsets**: on/off, default=on, print the distance of the first byte
-       of each line in hex notation on the left
+      of each line in hex notation on the left
        ```python
        hexdmp(test_data, offsets='off')
        ```
-    * **start**: int, manually set offsets start value
+      
     * **showascii**: on/off, default=on, print the ASCII characters of each
-       byte on the right (print periods for hi/lo bytes)
+      byte on the right (print periods for hi/lo bytes)
+       ```python
+       hexdmp(test_data, showascii='off')
+       ```
+
+    * **start**: int, manually set offsets start value
+      ```python
+      hexdmp(test_data, start=2)
+      ```
+
     * **width**: positive int, default=16, let the user set the number of
-       bytes per line to print
+      bytes per line to print
+       ```python
+       hexdmp(test_data, width=8)
+       ```
  
 ## Usage:
 ```
