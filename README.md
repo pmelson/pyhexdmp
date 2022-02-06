@@ -20,12 +20,23 @@
        bytes per line to print
        
 ## Usage:
+**Importing**
+```python
+from pyhexdmp import hexdmp
+```
 ```
 >>> from pyhexdmp import hexdmp
 >>> with open('/home/paul/sample.exe', 'rb') as f:
 ...     raw = f.read()
 ... 
 >>> test_data = raw[:128]
+```
+
+**Basic output:**
+```python
+hexdmp(test_data)
+```
+```
 >>> hexdmp(test_data)
 00000000: 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00  MZ..............
 00000010: b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  ........@.......
@@ -35,6 +46,9 @@
 00000050: 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f  is program canno
 00000060: 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20  t be run in DOS 
 00000070: 6d 6f 64 65 2e 0d 0d 0a 24 00 00 00 00 00 00 00  mode....$.......
+```
+
+```
 >>> hexdmp(test_data, offsets='off')
 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00  MZ..............
 b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00  ........@.......
