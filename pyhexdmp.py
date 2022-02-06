@@ -111,7 +111,6 @@ def strhexdmp(data, offsets='on', start=0, showascii='on', width=16):
 
   # string construction loop
   out_string = ''
-  # this is slow with very large (300MB+) variables, can it be made faster?
   for i in range(0, len(inputba), width):
     chunk = inputba[i:i+width]
 
