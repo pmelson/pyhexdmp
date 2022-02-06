@@ -84,6 +84,7 @@ def hexdmp(data, offsets='on', start=0, showascii='on', width=16):
     else:
       print()
 
+
 # same as hexdmp(), but returns a string instead of printing to console
 def strhexdmp(data, offsets='on', start=0, showascii='on', width=16):
 
