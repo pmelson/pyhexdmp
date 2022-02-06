@@ -12,6 +12,9 @@
   * Print hex output format, supported optional arguments:
     * **offsets**: on/off, default=on, print the distance of the first byte
        of each line in hex notation on the left
+       ```python
+       hexdmp(test_data, offsets='off')
+       ```
     * **start**: int, manually set offsets start value
     * **showascii**: on/off, default=on, print the ASCII characters of each
        byte on the right (print periods for hi/lo bytes)
